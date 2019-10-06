@@ -11,7 +11,7 @@ while read line
 do
 > echo "$i: $line"
 > echo ""
-> $FIND $OPT | $XARGS $GREP $line > /dev/null 2>&1
+> $FIND $OPT | $XARGS $GREP $line 2>/dev/null
 > echo ""
 > i=$(( i+1 ))
 done <$1 
